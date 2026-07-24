@@ -1,0 +1,16 @@
+PHOTOS À DÉPOSER ICI — Rivoli — plancher chauffant
+========================================
+
+Respecte exactement les noms de fichiers ci-dessous (.jpg) :
+
+- cover.jpg  -> vignette du projet (page liste) ~800x600
+- hero.jpg -> hero (photo d'ouverture) ~1600x900
+- 01.jpg   -> photo du chantier ~1600x700
+- 02.jpg   -> photo du chantier ~68x68
+- 03.jpg   -> photo du chantier ~68x68
+- 04.jpg   -> photo du chantier ~68x68
+- 05.jpg   -> photo du chantier ~800x600
+- 06.jpg   -> photo du chantier ~800x600
+- 07.jpg   -> photo du chantier ~1000x700
+- 08.jpg   -> photo du chantier ~600x400
+- 09.jpg   -> photo du chantier ~600x400

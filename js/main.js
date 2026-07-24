@@ -481,3 +481,93 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 })();
+
+/* === Images chantiers : fallback auto vers placeholder tant que la vraie photo n'est pas déposée === */
+(() => {
+  // <img data-fb="url-placeholder">
+  document.querySelectorAll('img[data-fb]').forEach(img => {
+    const swap = () => { if (img.dataset.fb && img.src !== img.dataset.fb) img.src = img.dataset.fb; };
+    img.addEventListener('error', swap, { once: true });
+    if (img.complete && img.naturalWidth === 0) swap(); // déjà en échec au chargement du script
+  });
+  // Éléments avec background-image (hero chantier) data-fb="url-placeholder"
+  document.querySelectorAll('[data-fb]:not(img)').forEach(el => {
+    const m = (el.getAttribute('style') || '').match(/url\(['"]?([^'")]+)['"]?\)/);
+    if (!m) return;
+    const test = new Image();
+    test.onerror = () => { el.style.backgroundImage = `url('${el.dataset.fb}')`; };
+    test.src = m[1];
+  });
+})();
+
+/* === Section « Notre méthode » — flèches pointillées animées entre les cartes === */
+(() => {
+  const flow = document.querySelector('.methode-flow');
+  if (!flow) return;
+  const svg = flow.querySelector('.methode-lines');
+  const cards = [...flow.querySelectorAll('.methode-card')];
+  if (!svg || cards.length < 2) return;
+
+  const NS = 'http://www.w3.org/2000/svg';
+  let paths = [];
+  let drawn = false;
+
+  function build() {
+    // positions de layout (ignorent la transform d'entrée des cartes)
+    const W = flow.offsetWidth, H = flow.offsetHeight;
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.innerHTML = '';
+    paths = [];
+
+    // marqueur flèche
+    const defs = document.createElementNS(NS, 'defs');
+    defs.innerHTML = '<marker id="methode-arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">' +
+      '<path d="M1 1 L6 5 L1 9" fill="none" stroke="#B8935A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>';
+    svg.appendChild(defs);
+
+    for (let i = 0; i < cards.length - 1; i++) {
+      const a = cards[i], b = cards[i + 1];
+      const x1 = a.offsetLeft + a.offsetWidth * 0.5;
+      const y1 = a.offsetTop + a.offsetHeight;
+      const x2 = b.offsetLeft + Math.min(b.offsetWidth * 0.35, 70);
+      const y2 = b.offsetTop;
+      const midY = (y1 + y2) / 2;
+      const d = `M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2 - 6}`;
+      const p = document.createElementNS(NS, 'path');
+      p.setAttribute('d', d);
+      p.setAttribute('class', 'methode-line');
+      p.setAttribute('marker-end', 'url(#methode-arrow)');
+      const len = p.getTotalLength();
+      p.style.strokeDasharray = `${len}`;
+      p.style.strokeDashoffset = drawn ? '0' : `${len}`;
+      svg.appendChild(p);
+      paths.push(p);
+    }
+  }
+
+  function animate() {
+    paths.forEach((p, i) => {
+      const len = p.getTotalLength();
+      p.style.transition = 'none';
+      p.style.strokeDasharray = `${len}`;
+      p.style.strokeDashoffset = `${len}`;
+      p.getBoundingClientRect(); // reflow
+      p.style.transition = `stroke-dashoffset 0.9s cubic-bezier(0.4,0,0.2,1) ${0.35 + i * 0.55}s`;
+      p.style.strokeDashoffset = '0';
+    });
+  }
+
+  build();
+  window.addEventListener('resize', () => { build(); }, { passive: true });
+
+  const obs = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) {
+      flow.classList.add('is-in');
+      build();
+      animate();
+      drawn = true;
+      obs.disconnect();
+    }
+  }, { threshold: 0.25 });
+  obs.observe(flow);
+})();

@@ -4654,3 +4654,160 @@ p { max-width: 65ch; }
 @media (max-width: 560px) {
   .svc-prestations, .svc-stats, .svc-process { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   SECTION « NOTRE MÉTHODE » — cartes en cascade + flèches animées
+   ============================================================ */
+.methode-section {
+  background: var(--color-surface);
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  overflow: hidden;
+}
+
+/* En-tête */
+.methode-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-dark);
+  color: var(--color-white);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+  border-radius: 100px;
+  margin-bottom: 1.8rem;
+}
+.methode-pill::before {
+  content: '';
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--color-gold);
+}
+.methode-head-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.5rem 3rem;
+  align-items: end;
+}
+.methode-head-grid h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+  margin: 0;
+}
+.methode-head-grid h2 em { font-style: italic; color: var(--color-gold); }
+.methode-intro { color: var(--color-text-muted); line-height: 1.75; margin: 0; }
+
+/* Flow des cartes en cascade */
+.methode-flow {
+  position: relative;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3.2rem);
+}
+
+/* Overlay SVG des flèches (dessiné en JS) */
+.methode-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+.methode-line {
+  fill: none;
+  stroke: var(--color-gold);
+  stroke-width: 2;
+  stroke-dasharray: 6 7;      /* pointillés */
+  stroke-linecap: round;
+}
+
+/* Carte étape */
+.methode-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: min(560px, 82%);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(20,20,16,0.05);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.methode-card[data-step="1"] { margin-left: 0; }
+.methode-card[data-step="2"] { margin-left: 8%; }
+.methode-card[data-step="3"] { margin-left: 16%; }
+.methode-card[data-step="4"] { margin-left: 24%; }
+
+.methode-flow.is-in .methode-card { opacity: 1; transform: translateY(0); }
+.methode-flow.is-in .methode-card[data-step="2"] { transition-delay: 0.15s; }
+.methode-flow.is-in .methode-card[data-step="3"] { transition-delay: 0.30s; }
+.methode-flow.is-in .methode-card[data-step="4"] { transition-delay: 0.45s; }
+
+/* Onglet vertical (durée) */
+.methode-tab {
+  flex-shrink: 0;
+  width: 46px;
+  background: var(--color-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.methode-tab span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: var(--color-gold);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.methode-body { padding: 1.8rem 2rem; flex: 1; }
+.methode-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.methode-ico {
+  width: 42px; height: 42px;
+  border-radius: 11px;
+  background: rgba(184,147,90,0.12);
+  color: var(--color-gold);
+  display: grid; place-items: center;
+}
+.methode-ico svg { width: 21px; height: 21px; }
+.methode-num {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--color-border);
+  font-weight: 700;
+}
+.methode-body h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  color: var(--color-text);
+}
+.methode-body p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin: 0;
+  max-width: 42ch;
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+  .methode-head-grid { grid-template-columns: 1fr; align-items: start; }
+  .methode-card { width: 100%; margin-left: 0 !important; }
+  .methode-flow { gap: 2.2rem; }
+}
