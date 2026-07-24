@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- [TITLE] Modifier pour chaque chantier -->
+  <title>Travellers Club — Terrasse des Champs-Élysées | CCB</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Réfection des dalles en pierre naturelle et de l'étanchéité de la terrasse du Travellers Club — validée par l'Architecte des Monuments Historiques.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="chantier-page">
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="CCB — Accueil">
+        <svg class="nav-logo-mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="22" cy="22" r="21" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                font-family="Georgia, serif" font-size="13" font-weight="700"
+                fill="white" letter-spacing="1">CCB</text>
+        </svg>
+        <div class="nav-logo-text">CCB<span>Concept Création Bâtiment</span></div>
+      </a>
+      <div class="nav-links" role="menubar">
+        <a href="index.html"     class="nav-link" role="menuitem">Accueil</a>
+        <a href="chantiers.html" class="nav-link" role="menuitem">Réalisations</a>
+        <a href="histoire.html"  class="nav-link" role="menuitem">Notre histoire</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Nous contacter</a>
+      <button class="nav-burger" aria-label="Menu mobile" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" role="menu">
+    <a href="index.html"     class="nav-link">Accueil</a>
+    <a href="chantiers.html" class="nav-link">Réalisations</a>
+    <a href="histoire.html"  class="nav-link">Notre histoire</a>
+    <a href="contact.html"   class="nav-cta btn-outline-dark btn">Nous contacter</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO — [BG_IMAGE] img/chantiers/[slug]/hero.jpg
+       ═══════════════════════════════════════════ -->
+  <header class="ch-hero" aria-labelledby="ch-title">
+    <!-- [BG_IMAGE] Remplacer le gradient par la photo du chantier -->
+    <div class="ch-hero-bg" style="background-image:linear-gradient(160deg,#2a2820 0%,#1a1810 60%,#0c0c0a 100%);" aria-hidden="true"></div>
+    <!-- Croquis architectural en parallaxe sur le hero -->
+    <div class="ch-hero-sketch" aria-hidden="true">
+      <svg viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <!-- Plan de masse terrasse simplifié -->
+        <rect x="160" y="80" width="1080" height="540" stroke-width="5"/>
+        <!-- Dallage — grille orthogonale -->
+        <line x1="160" y1="180" x2="1240" y2="180" stroke-width="0.8"/>
+        <line x1="160" y1="280" x2="1240" y2="280" stroke-width="0.8"/>
+        <line x1="160" y1="380" x2="1240" y2="380" stroke-width="0.8"/>
+        <line x1="160" y1="480" x2="1240" y2="480" stroke-width="0.8"/>
+        <line x1="310" y1="80" x2="310" y2="620" stroke-width="0.8"/>
+        <line x1="460" y1="80" x2="460" y2="620" stroke-width="0.8"/>
+        <line x1="610" y1="80" x2="610" y2="620" stroke-width="0.8"/>
+        <line x1="760" y1="80" x2="760" y2="620" stroke-width="0.8"/>
+        <line x1="910" y1="80" x2="910" y2="620" stroke-width="0.8"/>
+        <line x1="1060" y1="80" x2="1060" y2="620" stroke-width="0.8"/>
+        <!-- Jardinières en bordure -->
+        <rect x="200" y="108" width="80" height="44" stroke-width="1.4"/>
+        <rect x="320" y="108" width="80" height="44" stroke-width="1.4"/>
+        <rect x="440" y="108" width="80" height="44" stroke-width="1.4"/>
+        <rect x="560" y="108" width="80" height="44" stroke-width="1.4"/>
+        <rect x="680" y="108" width="80" height="44" stroke-width="1.4"/>
+        <rect x="800" y="108" width="80" height="44" stroke-width="1.4"/>
+        <rect x="920" y="108" width="80" height="44" stroke-width="1.4"/>
+        <rect x="1040" y="108" width="80" height="44" stroke-width="1.4"/>
+        <!-- Drain central -->
+        <line x1="700" y1="80" x2="700" y2="620" stroke-width="2.2" stroke-dasharray="6 4"/>
+        <!-- Accès / seuil -->
+        <line x1="160" y1="340" x2="180" y2="340" stroke-width="2.5"/>
+        <line x1="160" y1="360" x2="180" y2="360" stroke-width="2.5"/>
+        <path d="M180,340 A20,20 0 0,1 180,360" stroke-width="1.2"/>
+        <!-- Mobilier terrasse (table + 4 chaises) -->
+        <rect x="580" y="290" width="240" height="120" rx="2" stroke-width="1.5"/>
+        <rect x="548" y="310" width="28" height="52" rx="1" stroke-width="1.0"/>
+        <rect x="824" y="310" width="28" height="52" rx="1" stroke-width="1.0"/>
+        <rect x="618" y="258" width="60" height="28" rx="1" stroke-width="1.0"/>
+        <rect x="722" y="258" width="60" height="28" rx="1" stroke-width="1.0"/>
+        <rect x="618" y="414" width="60" height="28" rx="1" stroke-width="1.0"/>
+        <rect x="722" y="414" width="60" height="28" rx="1" stroke-width="1.0"/>
+        <!-- Cotes -->
+        <line x1="160" y1="44" x2="1240" y2="44" stroke-width="0.7"/>
+        <line x1="160" y1="36" x2="160" y2="52" stroke-width="0.7"/>
+        <line x1="1240" y1="36" x2="1240" y2="52" stroke-width="0.7"/>
+        <text x="700" y="38" text-anchor="middle" font-size="14" font-family="Inter,sans-serif" fill="currentColor" stroke="none">22.50 m</text>
+        <line x1="124" y1="80" x2="124" y2="620" stroke-width="0.7"/>
+        <line x1="116" y1="80" x2="132" y2="80" stroke-width="0.7"/>
+        <line x1="116" y1="620" x2="132" y2="620" stroke-width="0.7"/>
+        <text x="112" y="355" text-anchor="middle" font-size="14" font-family="Inter,sans-serif" fill="currentColor" stroke="none" transform="rotate(-90,112,355)">10.80 m</text>
+        <!-- Boussole / Nord -->
+        <circle cx="1290" cy="120" r="22" stroke-width="1.0"/>
+        <line x1="1290" y1="100" x2="1290" y2="140" stroke-width="1.2"/>
+        <line x1="1270" y1="120" x2="1310" y2="120" stroke-width="1.2"/>
+        <text x="1290" y="96" text-anchor="middle" font-size="12" font-family="Inter,sans-serif" fill="currentColor" stroke="none">N</text>
+      </svg>
+    </div>
+    <div class="ch-hero-overlay" aria-hidden="true"></div>
+    <div class="ch-hero-content">
+      <nav class="ch-breadcrumb" aria-label="Fil d'Ariane">
+        <a href="chantiers.html">Nos réalisations</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <!-- [PROJET_COURT] -->
+        <span>Travellers Club</span>
+      </nav>
+      <!-- [CATEGORIE] -->
+      <div class="ch-hero-cat">Maçonnerie · Pierre naturelle</div>
+      <!-- [TITRE] -->
+      <h1 class="ch-hero-title" id="ch-title">Travellers Club —<br>Terrasse des Champs-Élysées</h1>
+      <div class="ch-hero-meta">
+        <!-- [ADRESSE] -->
+        <span>75008 Paris</span>
+        <span class="ch-meta-dot" aria-hidden="true">·</span>
+        <!-- [ANNEE] -->
+        <span>2012</span>
+        <span class="ch-meta-dot" aria-hidden="true">·</span>
+        <!-- [SURFACE] -->
+        <span>350 m² de terrasse</span>
+      </div>
+    </div>
+    <div class="ch-scroll-hint" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       STATS — [STATS] 4 chiffres clés
+       ═══════════════════════════════════════════ -->
+  <div class="ch-stats" role="region" aria-label="Chiffres clés du chantier">
+    <div class="container">
+      <div class="ch-stats-grid">
+        <div class="ch-stat">
+          <div class="ch-stat-number">
+            <!-- [STAT_1_VAL] --><span class="ch-stat-val">350</span><span class="ch-stat-unit">m²</span>
+          </div>
+          <!-- [STAT_1_LBL] --><div class="ch-stat-lbl">Surface rénovée</div>
+        </div>
+        <div class="ch-stat">
+          <div class="ch-stat-number">
+            <!-- [STAT_2_VAL] --><span class="ch-stat-val">5</span><span class="ch-stat-unit">mois</span>
+          </div>
+          <!-- [STAT_2_LBL] --><div class="ch-stat-lbl">Durée du chantier</div>
+        </div>
+        <div class="ch-stat">
+          <div class="ch-stat-number">
+            <!-- [STAT_3_VAL] --><span class="ch-stat-val">4</span><span class="ch-stat-unit">corps</span>
+          </div>
+          <!-- [STAT_3_LBL] --><div class="ch-stat-lbl">Corps de métier</div>
+        </div>
+        <div class="ch-stat">
+          <div class="ch-stat-number">
+            <!-- [STAT_4_VAL] --><span class="ch-stat-val">2012</span>
+          </div>
+          <!-- [STAT_4_LBL] --><div class="ch-stat-lbl">Année de livraison</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       INTRO — Description + Fiche projet
+       Croquis parallaxe : plan de masse
+       ═══════════════════════════════════════════ -->
+  <section class="section has-sketch ch-intro-section" aria-labelledby="ch-intro-heading">
+    <!-- Sketch parallaxe : plan architecturale en fond -->
+    <div class="sketch-layer" aria-hidden="true">
+      <svg viewBox="0 0 1400 600" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <!-- Plan d'appartement haussmannien simplifié -->
+        <!-- Murs extérieurs -->
+        <rect x="60" y="40" width="1280" height="520" stroke-width="8"/>
+        <!-- Couloir central -->
+        <line x1="380" y1="40" x2="380" y2="560" stroke-width="4"/>
+        <!-- Partition horizontale cuisine/séjour -->
+        <line x1="60" y1="300" x2="380" y2="300" stroke-width="4"/>
+        <!-- Partition verticale : chambres -->
+        <line x1="780" y1="40" x2="780" y2="300" stroke-width="4"/>
+        <line x1="1100" y1="40" x2="1100" y2="560" stroke-width="4"/>
+        <!-- Partition horizontale chambres / SDB -->
+        <line x1="780" y1="300" x2="1340" y2="300" stroke-width="4"/>
+        <!-- Fenêtres (côté nord) -->
+        <line x1="160" y1="40" x2="230" y2="40" stroke-width="5"/>
+        <line x1="480" y1="40" x2="580" y2="40" stroke-width="5"/>
+        <line x1="650" y1="40" x2="750" y2="40" stroke-width="5"/>
+        <line x1="860" y1="40" x2="960" y2="40" stroke-width="5"/>
+        <!-- Fenêtres (côté sud) -->
+        <line x1="200" y1="560" x2="320" y2="560" stroke-width="5"/>
+        <line x1="500" y1="560" x2="680" y2="560" stroke-width="5"/>
+        <line x1="800" y1="560" x2="960" y2="560" stroke-width="5"/>
+        <!-- Portes (arcs) -->
+        <path d="M380,160 A60,60 0 0,0 440,100" stroke-width="0.9"/>
+        <line x1="380" y1="160" x2="380" y2="100" stroke-width="4"/>
+        <path d="M380,400 A55,55 0 0,1 435,455" stroke-width="0.9"/>
+        <line x1="380" y1="400" x2="380" y2="455" stroke-width="4"/>
+        <path d="M780,200 A50,50 0 0,0 830,150" stroke-width="0.9"/>
+        <line x1="780" y1="200" x2="780" y2="150" stroke-width="4"/>
+        <!-- Labels des pièces -->
+        <text x="210" y="180" text-anchor="middle" font-size="18" font-family="Inter,sans-serif" fill="currentColor" stroke="none" letter-spacing="2">ENTRÉE</text>
+        <text x="210" y="420" text-anchor="middle" font-size="18" font-family="Inter,sans-serif" fill="currentColor" stroke="none" letter-spacing="2">CUISINE</text>
+        <text x="590" y="200" text-anchor="middle" font-size="18" font-family="Inter,sans-serif" fill="currentColor" stroke="none" letter-spacing="2">SALON / SÉJOUR</text>
+        <text x="590" y="430" text-anchor="middle" font-size="18" font-family="Inter,sans-serif" fill="currentColor" stroke="none" letter-spacing="2">SALLE À MANGER</text>
+        <text x="935" y="180" text-anchor="middle" font-size="18" font-family="Inter,sans-serif" fill="currentColor" stroke="none" letter-spacing="2">CHAMBRE 1</text>
+        <text x="1210" y="180" text-anchor="middle" font-size="18" font-family="Inter,sans-serif" fill="currentColor" stroke="none" letter-spacing="2">CHAMBRE 2</text>
+        <text x="1210" y="430" text-anchor="middle" font-size="18" font-family="Inter,sans-serif" fill="currentColor" stroke="none" letter-spacing="2">SALLE DE BAIN</text>
+        <!-- Cotes -->
+        <line x1="60" y1="16" x2="1340" y2="16" stroke-width="0.6"/>
+        <line x1="60" y1="8" x2="60" y2="24" stroke-width="0.6"/>
+        <line x1="1340" y1="8" x2="1340" y2="24" stroke-width="0.6"/>
+        <text x="700" y="12" text-anchor="middle" font-size="13" font-family="Inter,sans-serif" fill="currentColor" stroke="none">~ 28.00 m</text>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="ch-intro-grid fade-in">
+
+        <!-- Colonne texte -->
+        <div class="ch-intro-text">
+          <div class="overline">Présentation</div>
+          <!-- [H2_INTRO] -->
+          <h2 id="ch-intro-heading">Une terrasse classée,<br>restituée à l'identique</h2>
+          <!-- [DESCRIPTION_1] -->
+          <p>Au cœur du 8e arrondissement, le Travellers Club occupe l'hôtel de La Vaupalière, monument historique surplombant l'avenue des Champs-Élysées. Sa terrasse — 350 m² de pierre de Bourgogne — présentait des fissures d'étanchéité et des désordres dans le jointement, menaçant les plafonds des salons du rez-de-chaussée.</p>
+          <!-- [DESCRIPTION_2] -->
+          <p style="margin-top:1.2rem;">CCB a établi un plan de calpinage complet sous Autocad, validé par l'Architecte des Monuments Historiques. Un constat d'huissier a été réalisé avant le début des travaux. L'ensemble des dalles a été reposé avec des matériaux d'origine, des percements de dalle ont permis des évacuations invisibles — sans grilles inox en surface — et l'étanchéité a été reprise sous membrane bitumineuse haute performance.</p>
+        </div>
+
+        <!-- Fiche projet -->
+        <aside class="ch-intro-card" aria-label="Fiche projet">
+          <div class="ch-card-inner">
+            <div class="ch-card-title">Fiche projet</div>
+            <dl class="ch-details">
+              <!-- [DETAIL_CLIENT] -->
+              <div class="ch-detail-row">
+                <dt>Client</dt>
+                <dd>Travellers Club de France</dd>
+              </div>
+              <!-- [DETAIL_ADRESSE] -->
+              <div class="ch-detail-row">
+                <dt>Adresse</dt>
+                <dd>23 av. des Champs-Élysées, Paris 8e</dd>
+              </div>
+              <!-- [DETAIL_TYPE] -->
+              <div class="ch-detail-row">
+                <dt>Nature</dt>
+                <dd>Rénovation extérieure · Monument historique</dd>
+              </div>
+              <!-- [DETAIL_SURFACE] -->
+              <div class="ch-detail-row">
+                <dt>Surface</dt>
+                <dd>350 m² de terrasse</dd>
+              </div>
+              <!-- [DETAIL_LIVRAISON] -->
+              <div class="ch-detail-row">
+                <dt>Livraison</dt>
+                <dd>Printemps 2012</dd>
+              </div>
+              <!-- [DETAIL_VALIDATION] -->
+              <div class="ch-detail-row">
+                <dt>Validation</dt>
+                <dd>Architecte des Monuments Historiques</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PHOTO 1 — Pleine largeur
+       [PHOTO_FULL] img/chantiers/[slug]/01.jpg
+       ═══════════════════════════════════════════ -->
+  <div class="ch-photo-full">
+    <!-- [PHOTO_1] Remplacer par img réelle -->
+    <div class="ch-photo-ph" style="background:linear-gradient(160deg,#e8e4dc,#cfc9be);" aria-hidden="true"></div>
+    <!-- <img src="img/chantiers/travellers/01.jpg" alt="Vue générale de la terrasse rénovée — Travellers Club" loading="lazy"> -->
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       [SECTION OPTIONNELLE] SAVOIR-FAIRE
+       Croquis ossature 3D à gauche + 3 cartes
+       → Désactivable via Sanity : enabled: false
+       ═══════════════════════════════════════════ -->
+  <section class="ch-savoir" aria-labelledby="ch-savoir-heading" data-section="savoir-faire">
+    <div class="ch-savoir-layout">
+
+      <!-- Gauche : croquis ossature 3D en parallaxe -->
+      <div class="ch-savoir-sketch has-sketch">
+        <div class="sketch-layer" aria-hidden="true">
+          <svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+            <!-- Ossature bois / métal — vue en perspective cavalière -->
+            <!-- Dalle de sol -->
+            <polygon points="55,690 610,690 875,490 320,490" stroke-width="2.5"/>
+            <!-- Face avant : colonnes extérieures -->
+            <line x1="55"  y1="690" x2="55"  y2="330" stroke-width="3"/>
+            <line x1="610" y1="690" x2="610" y2="330" stroke-width="3"/>
+            <!-- Lisses hautes et basses (face avant) -->
+            <line x1="55"  y1="330" x2="610" y2="330" stroke-width="2.5"/>
+            <line x1="55"  y1="690" x2="610" y2="690" stroke-width="2.5"/>
+            <!-- Colonnes intermédiaires (face avant) : 4 -->
+            <line x1="166" y1="690" x2="166" y2="330" stroke-width="1.8"/>
+            <line x1="277" y1="690" x2="277" y2="330" stroke-width="1.8"/>
+            <line x1="388" y1="690" x2="388" y2="330" stroke-width="1.8"/>
+            <line x1="499" y1="690" x2="499" y2="330" stroke-width="1.8"/>
+            <!-- Lisse intermédiaire mi-hauteur -->
+            <line x1="55"  y1="510" x2="610" y2="510" stroke-width="1.2"/>
+            <!-- Croix de Saint-André (2 baies) -->
+            <line x1="55"  y1="330" x2="166" y2="690" stroke-width="0.9"/>
+            <line x1="55"  y1="690" x2="166" y2="330" stroke-width="0.9"/>
+            <line x1="499" y1="330" x2="610" y2="690" stroke-width="0.9"/>
+            <line x1="499" y1="690" x2="610" y2="330" stroke-width="0.9"/>
+            <!-- Face droite (en perspective) -->
+            <line x1="610" y1="330" x2="875" y2="130" stroke-width="2.5"/>
+            <line x1="610" y1="690" x2="875" y2="490" stroke-width="2.5"/>
+            <line x1="875" y1="130" x2="875" y2="490" stroke-width="2.5"/>
+            <!-- Colonnes arrière (visibles sur face droite) -->
+            <line x1="764" y1="148" x2="764" y2="508" stroke-width="1.5"/>
+            <!-- Lisse haute arrière -->
+            <line x1="320" y1="130" x2="875" y2="130" stroke-width="2"/>
+            <line x1="55"  y1="330" x2="320" y2="130" stroke-width="2"/>
+            <!-- Lisse mi-hauteur arrière -->
+            <line x1="610" y1="510" x2="875" y2="310" stroke-width="1"/>
+            <line x1="320" y1="310" x2="610" y2="510" stroke-width="1" stroke-dasharray="6,4"/>
+            <!-- Arbalétriers du toit (faîtage) -->
+            <!-- Faîtage avant : centre de la lisse haute avant -->
+            <!-- Point faîte avant : (332, 210) | Point faîte arrière : (597, 10) -->
+            <line x1="332" y1="210" x2="597" y2="10"  stroke-width="3"/>
+            <!-- Arbalétriers face avant -->
+            <line x1="332" y1="210" x2="55"  y2="330" stroke-width="1.8"/>
+            <line x1="332" y1="210" x2="166" y2="330" stroke-width="1.2"/>
+            <line x1="332" y1="210" x2="277" y2="330" stroke-width="1.2"/>
+            <line x1="332" y1="210" x2="388" y2="330" stroke-width="1.2"/>
+            <line x1="332" y1="210" x2="499" y2="330" stroke-width="1.2"/>
+            <line x1="332" y1="210" x2="610" y2="330" stroke-width="1.8"/>
+            <!-- Arbalétriers face arrière -->
+            <line x1="597" y1="10"  x2="320" y2="130" stroke-width="1.8"/>
+            <line x1="597" y1="10"  x2="447" y2="130" stroke-width="1.2"/>
+            <line x1="597" y1="10"  x2="597" y2="130" stroke-width="1.2"/>
+            <line x1="597" y1="10"  x2="764" y2="130" stroke-width="1.2"/>
+            <line x1="597" y1="10"  x2="875" y2="130" stroke-width="1.8"/>
+            <!-- Pannes (parallèles au faîtage, sur pente) -->
+            <line x1="200" y1="262" x2="462" y2="262" stroke-width="1"/>
+            <line x1="155" y1="292" x2="508" y2="292" stroke-width="0.7"/>
+            <!-- Solives de plancher -->
+            <line x1="166" y1="690" x2="431" y2="490" stroke-width="0.8"/>
+            <line x1="277" y1="690" x2="542" y2="490" stroke-width="0.8"/>
+            <line x1="388" y1="690" x2="653" y2="490" stroke-width="0.8"/>
+            <line x1="499" y1="690" x2="764" y2="490" stroke-width="0.8"/>
+            <!-- Points de jonction (nœuds) aux coins -->
+            <circle cx="55"  cy="330" r="5" fill="currentColor"/>
+            <circle cx="610" cy="330" r="5" fill="currentColor"/>
+            <circle cx="875" cy="130" r="5" fill="currentColor"/>
+            <circle cx="332" cy="210" r="6" fill="currentColor"/>
+            <circle cx="597" cy="10"  r="6" fill="currentColor"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Droite : titre + 3 cartes features -->
+      <div class="ch-savoir-content">
+        <!-- [SAVOIR_OVERLINE] -->
+        <div class="overline ch-savoir-overline">Approche &amp; Méthodes</div>
+        <!-- [SAVOIR_TITRE] -->
+        <h2 id="ch-savoir-heading" class="ch-savoir-title">Ce qui fait<br>la différence</h2>
+
+        <!-- [CARD_1] -->
+        <div class="ch-feat-card fade-in">
+          <div class="ch-feat-img">
+            <!-- <img src="img/chantiers/[slug]/feat-1.jpg" alt=""> -->
+            <div class="ch-photo-ph" style="background:linear-gradient(140deg,#e8e4dc,#d0cbc4);" aria-hidden="true"></div>
+          </div>
+          <div class="ch-feat-body">
+            <!-- [CARD_1_TITRE] -->
+            <h3>Matériaux préservés à l'identique</h3>
+            <!-- [CARD_1_TEXTE] -->
+            <p>Pierre de Bourgogne issue des mêmes carrières que l'existant. Aucun écart de teinte ni de texture visible après intervention.</p>
+          </div>
+        </div>
+
+        <!-- [CARD_2] -->
+        <div class="ch-feat-card fade-in">
+          <div class="ch-feat-img">
+            <!-- <img src="img/chantiers/[slug]/feat-2.jpg" alt=""> -->
+            <div class="ch-photo-ph" style="background:linear-gradient(140deg,#dde8e0,#c4d4cc);" aria-hidden="true"></div>
+          </div>
+          <div class="ch-feat-body">
+            <!-- [CARD_2_TITRE] -->
+            <h3>Conformité Monuments Historiques</h3>
+            <!-- [CARD_2_TEXTE] -->
+            <p>Plan de calpinage établi sous Autocad, soumis et validé par l'Architecte des Monuments Historiques avant le premier geste.</p>
+          </div>
+        </div>
+
+        <!-- [CARD_3] -->
+        <div class="ch-feat-card fade-in">
+          <div class="ch-feat-img">
+            <!-- <img src="img/chantiers/[slug]/feat-3.jpg" alt=""> -->
+            <div class="ch-photo-ph" style="background:linear-gradient(140deg,#e4e0d8,#ccc8c0);" aria-hidden="true"></div>
+          </div>
+          <div class="ch-feat-body">
+            <!-- [CARD_3_TITRE] -->
+            <h3>Zéro trace en surface</h3>
+            <!-- [CARD_3_TEXTE] -->
+            <p>Évacuations créées par percement de dalle — aucune grille ni émergence visible. La terrasse restitue son aspect d'origine.</p>
+          </div>
+        </div>
+
+      </div><!-- /ch-savoir-content -->
+    </div><!-- /ch-savoir-layout -->
+  </section>
+  <!-- ═══ FIN SECTION OPTIONNELLE ═══ -->
+
+  <!-- ═══════════════════════════════════════════
+       GALERIE ALTERNÉE — photos + textes
+       Croquis parallaxe : élévation en fond
+       ═══════════════════════════════════════════ -->
+  <section class="section has-sketch ch-gallery-section" aria-label="Galerie du chantier">
+    <!-- Sketch parallaxe : élévation Haussmann -->
+    <div class="sketch-layer" aria-hidden="true">
+      <svg viewBox="0 0 1400 800" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <rect x="100" y="180" width="30" height="550" stroke-width="1.2"/>
+        <rect x="1270" y="180" width="30" height="550" stroke-width="1.2"/>
+        <rect x="342" y="180" width="20" height="540" stroke-width="0.9"/>
+        <rect x="574" y="180" width="20" height="540" stroke-width="0.9"/>
+        <rect x="806" y="180" width="20" height="540" stroke-width="0.9"/>
+        <rect x="1038" y="180" width="20" height="540" stroke-width="0.9"/>
+        <line x1="100" y1="180" x2="1300" y2="180" stroke-width="1.5"/>
+        <line x1="95"  y1="188" x2="1305" y2="188" stroke-width="0.6"/>
+        <line x1="100" y1="310" x2="1300" y2="310" stroke-width="1.0"/>
+        <line x1="100" y1="450" x2="1300" y2="450" stroke-width="1.0"/>
+        <line x1="92"  y1="616" x2="1308" y2="616" stroke-width="2.2"/>
+        <line x1="95"  y1="624" x2="1305" y2="624" stroke-width="1.0"/>
+        <line x1="60"  y1="730" x2="1340" y2="730" stroke-width="1.8"/>
+        <path d="M 186,728 L 186,698 A 50,50 0 0,1 286,698 L 286,728" stroke-width="1.2"/>
+        <path d="M 418,728 L 418,698 A 50,50 0 0,1 518,698 L 518,728" stroke-width="1.2"/>
+        <path d="M 640,728 L 640,690 A 60,60 0 0,1 760,690 L 760,728" stroke-width="1.4"/>
+        <path d="M 882,728 L 882,698 A 50,50 0 0,1 982,698 L 982,728" stroke-width="1.2"/>
+        <path d="M 1114,728 L 1114,698 A 50,50 0 0,1 1214,698 L 1214,728" stroke-width="1.2"/>
+        <path d="M 100,180 L 100,92 Q 300,56 700,50 Q 1100,56 1300,92 L 1300,180" stroke-width="1.2"/>
+        <rect x="209" y="90" width="54" height="70" stroke-width="0.8"/>
+        <path d="M 206,90 L 236,66 L 266,90" stroke-width="0.8"/>
+        <rect x="673" y="90" width="54" height="70" stroke-width="0.8"/>
+        <path d="M 670,90 L 700,66 L 730,90" stroke-width="0.8"/>
+        <rect x="1137" y="90" width="54" height="70" stroke-width="0.8"/>
+        <path d="M 1134,90 L 1164,66 L 1194,90" stroke-width="0.8"/>
+      </svg>
+    </div>
+
+    <div class="container">
+
+      <!-- Bloc 1 — photo gauche, texte droite -->
+      <div class="ch-block fade-in">
+        <div class="ch-block-photo">
+          <!-- [PHOTO_2] img/chantiers/[slug]/02.jpg -->
+          <div class="ch-photo-ph" style="background:linear-gradient(140deg,#dfe4e8,#c8d0d5);" aria-hidden="true"></div>
+          <!-- <img src="img/chantiers/travellers/02.jpg" alt="Dépose des dalles en pierre" loading="lazy"> -->
+        </div>
+        <div class="ch-block-text">
+          <!-- [BLOC_1_TITRE] -->
+          <div class="overline">Diagnostic &amp; Préparation</div>
+          <h3>Un état des lieux exhaustif avant tout geste</h3>
+          <!-- [BLOC_1_TEXTE] -->
+          <p>Avant la moindre intervention, un constat d'huissier a été dressé pour documenter l'état exact de chaque dalle, joint et relevé d'étanchéité. Un plan de calpinage complet a été établi sous Autocad et soumis à l'Architecte des Monuments Historiques pour validation.</p>
+          <p style="margin-top:1rem;">Cette rigueur documentaire, rare dans le secteur, a permis d'éviter tout litige et de garantir la fidélité de la restitution aux matériaux d'origine.</p>
+        </div>
+      </div>
+
+      <!-- Bloc 2 — texte gauche, photo droite -->
+      <div class="ch-block ch-block--flip fade-in">
+        <div class="ch-block-text">
+          <!-- [BLOC_2_TITRE] -->
+          <div class="overline">Exécution</div>
+          <h3>Dalles reposées, évacuations repensées</h3>
+          <!-- [BLOC_2_TEXTE] -->
+          <p>L'ensemble des dalles en pierre de Bourgogne a été déposé, le complexe d'étanchéité entièrement renouvelé sous membrane bitumineuse haute performance, et les dalles reposées au joint de chaux selon les prescriptions de l'ACMH.</p>
+          <p style="margin-top:1rem;">Les évacuations d'eau de pluie ont été recréées par percements de dalle, sans grilles inox apparentes — une exigence du client pour préserver la pureté visuelle de la terrasse.</p>
+        </div>
+        <div class="ch-block-photo">
+          <!-- [PHOTO_3] img/chantiers/[slug]/03.jpg -->
+          <div class="ch-photo-ph" style="background:linear-gradient(140deg,#e4e8dc,#ccd4c4);" aria-hidden="true"></div>
+          <!-- <img src="img/chantiers/travellers/03.jpg" alt="Pose des nouvelles dalles en pierre de Bourgogne" loading="lazy"> -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PRESTATIONS RÉALISÉES — section sombre
+       ═══════════════════════════════════════════ -->
+  <section class="section section--dark ch-prestations" aria-labelledby="ch-presta-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="overline" style="color:var(--color-gold);">Le détail</div>
+        <!-- [PRESTA_TITRE] -->
+        <h2 id="ch-presta-heading">Prestations réalisées</h2>
+      </div>
+      <!-- [PRESTAS] Cocher / décocher selon le chantier -->
+      <div class="ch-presta-grid fade-in">
+        <div class="ch-presta-item ch-presta-item--on">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+          Maçonnerie · Gros œuvre
+        </div>
+        <div class="ch-presta-item ch-presta-item--on">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+          Pierre naturelle · Calpinage
+        </div>
+        <div class="ch-presta-item ch-presta-item--on">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+          Étanchéité · Membrane bitumineuse
+        </div>
+        <div class="ch-presta-item ch-presta-item--on">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
+          Plomberie · Évacuations
+        </div>
+        <div class="ch-presta-item ch-presta-item--off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Électricité
+        </div>
+        <div class="ch-presta-item ch-presta-item--off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Peinture · Finitions
+        </div>
+        <div class="ch-presta-item ch-presta-item--off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Menuiseries
+        </div>
+        <div class="ch-presta-item ch-presta-item--off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Carrelage · Revêtements
+        </div>
+        <div class="ch-presta-item ch-presta-item--off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Isolation thermique
+        </div>
+        <div class="ch-presta-item ch-presta-item--off">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          Charpente · Couverture
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GALERIE PHOTOS — mosaïque 3 photos
+       ═══════════════════════════════════════════ -->
+  <section class="section ch-mosaic-section" aria-label="Photos du chantier">
+    <div class="container">
+      <div class="ch-mosaic">
+        <!-- [PHOTO_4] grande photo gauche -->
+        <div class="ch-mosaic-main">
+          <div class="ch-photo-ph" style="background:linear-gradient(140deg,#e0ddd5,#c9c5bb);" aria-hidden="true"></div>
+          <!-- <img src="img/chantiers/travellers/04.jpg" alt="..."> -->
+        </div>
+        <div class="ch-mosaic-side">
+          <!-- [PHOTO_5] petite haut droite -->
+          <div class="ch-photo-ph" style="background:linear-gradient(140deg,#d8e0dd,#c0ccc8);" aria-hidden="true"></div>
+          <!-- <img src="img/chantiers/travellers/05.jpg" alt="..."> -->
+          <!-- [PHOTO_6] petite bas droite -->
+          <div class="ch-photo-ph" style="background:linear-gradient(140deg,#e4ddd5,#ccc4b8);" aria-hidden="true"></div>
+          <!-- <img src="img/chantiers/travellers/06.jpg" alt="..."> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJETS SIMILAIRES
+       ═══════════════════════════════════════════ -->
+  <section class="section section--surface ch-similaires" aria-labelledby="ch-sim-heading">
+    <div class="container">
+      <div class="section-header fade-in">
+        <div class="overline">À découvrir aussi</div>
+        <h2 id="ch-sim-heading">Projets similaires</h2>
+      </div>
+      <div class="ch-sim-grid fade-in">
+
+        <!-- [SIM_1] -->
+        <a href="chantier-template.html" class="ch-sim-card">
+          <div class="ch-sim-photo">
+            <div class="ch-photo-ph" style="background:linear-gradient(140deg,#dde8e4,#c4d0cc);" aria-hidden="true"></div>
+          </div>
+          <div class="ch-sim-body">
+            <div class="ch-sim-tags">
+              <span class="project-tag">Rénovation TCE</span>
+              <span class="project-tag">Duplex</span>
+            </div>
+            <h3>Duplex face à Notre-Dame — Quai de la Tournelle</h3>
+            <div class="ch-sim-loc">75005 Paris</div>
+          </div>
+          <svg class="ch-sim-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- [SIM_2] -->
+        <a href="chantier-template.html" class="ch-sim-card">
+          <div class="ch-sim-photo">
+            <div class="ch-photo-ph" style="background:linear-gradient(140deg,#e8e4d8,#d0ccc0);" aria-hidden="true"></div>
+          </div>
+          <div class="ch-sim-body">
+            <div class="ch-sim-tags">
+              <span class="project-tag">Maçonnerie</span>
+              <span class="project-tag">Prestige</span>
+            </div>
+            <h3>Hôtel particulier — Famille Rothschild, Rue de Varenne</h3>
+            <div class="ch-sim-loc">75007 Paris</div>
+          </div>
+          <svg class="ch-sim-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- [SIM_3] -->
+        <a href="chantier-template.html" class="ch-sim-card">
+          <div class="ch-sim-photo">
+            <div class="ch-photo-ph" style="background:linear-gradient(140deg,#e8e4dd,#d0cbc4);" aria-hidden="true"></div>
+          </div>
+          <div class="ch-sim-body">
+            <div class="ch-sim-tags">
+              <span class="project-tag">Rénovation complète</span>
+              <span class="project-tag">180 m²</span>
+            </div>
+            <h3>Maison de plain-pied — Rénovation intégrale</h3>
+            <div class="ch-sim-loc">Boissy-sans-Avoir, 78</div>
+          </div>
+          <svg class="ch-sim-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA FINAL
+       ═══════════════════════════════════════════ -->
+  <section class="section section--dark ch-cta" aria-labelledby="ch-cta-heading">
+    <div class="container">
+      <div class="ch-cta-inner fade-in">
+        <div class="ch-cta-text">
+          <div class="overline" style="color:var(--color-gold);">Votre projet</div>
+          <h2 id="ch-cta-heading">Vous avez un chantier<br>du même acabit ?</h2>
+          <p>Que ce soit un monument historique, un appartement haussmannien ou un espace professionnel — CCB s'adapte aux exigences les plus haute. Parlons-en.</p>
+        </div>
+        <div class="ch-cta-actions">
+          <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+          <a href="chantiers.html" class="btn btn-outline">Voir nos réalisations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-logo-text" style="margin-bottom:1rem; display:block;">CCB<span>Concept Création Bâtiment</span></div>
+          <p>Entreprise générale du bâtiment. Construction, rénovation et extension — de la fondation aux finitions.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="chantiers.html">Réalisations</a></li>
+            <li><a href="histoire.html">Notre histoire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Métiers</h5>
+          <ul>
+            <li><a href="chantiers.html">Maçonnerie</a></li>
+            <li><a href="chantiers.html">Rénovation</a></li>
+            <li><a href="chantiers.html">Électricité</a></li>
+            <li><a href="chantiers.html">Plomberie</a></li>
+            <li><a href="chantiers.html">Peinture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Certifications</h5>
+          <div class="footer-certifs">
+            <div class="footer-certif">Certification CIP</div>
+            <div class="footer-certif">Membre FFB</div>
+            <div class="footer-certif">Electricien Elexijum</div>
+            <div class="footer-certif">Artisan de Confiance MAAF</div>
+          </div>
+          <div style="margin-top:1.5rem;">
+            <a href="mailto:contact@steccb.com" style="font-size:0.85rem; color:rgba(255,255,255,0.5);">contact@steccb.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 CCB — Concept Création Bâtiment. Tous droits réservés.</div>
+        <div class="footer-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="politique-cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

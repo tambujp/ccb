@@ -1,0 +1,6 @@
+LOGO DU SITE — nommage attendu
+─────────────────────────────────
+logo-dark.svg    → logo pour fonds clairs (navbar scrollée, pages internes)
+logo-white.svg   → logo pour fonds sombres (navbar hero, footer)
+
+Déposer les fichiers ici, puis me dire et je mets à jour la nav.

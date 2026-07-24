@@ -1,0 +1,9 @@
+PHOTOS HERO — nommage attendu
+──────────────────────────────
+hero-home.jpg     → fond du hero de la homepage
+hero-histoire.jpg → fond du hero de la page Notre Histoire
+hero-chantiers.jpg→ fond du hero de la page Réalisations
+hero-contact.jpg  → fond du hero de la page Contact
+
+Format recommandé : JPG 1920×1080 minimum, qualité 80–85%
+Les fichiers sont référencés dans css/styles.css (.hero-bg background-image)

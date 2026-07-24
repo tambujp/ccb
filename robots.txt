@@ -1,0 +1,3 @@
+# Site en démonstration — indexation interdite
+User-agent: *
+Disallow: /

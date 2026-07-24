@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réalisations &amp; Chantiers — CCB Concept Création Bâtiment</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Découvrez les réalisations de CCB — maçonnerie, rénovation complète, électricité, carrelage et bien plus. Des projets réels, des résultats concrets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="CCB — Accueil">
+        <img class="site-logo site-logo--white" src="img/site/CCB%20-%20Temporary%20logo%20-%20white.svg" alt="CCB — Concept Création Bâtiment" loading="eager">
+        <img class="site-logo site-logo--dark"  src="img/site/CCB%20-%20temporary%20logo%20-%20Dark.svg"  alt="CCB — Concept Création Bâtiment" loading="eager">
+      </a>
+      <div class="nav-links" role="menubar">
+        <a href="index.html" class="nav-link" role="menuitem">Accueil</a>
+        <a href="chantiers.html" class="nav-link" role="menuitem">Réalisations</a>
+        <a href="histoire.html" class="nav-link" role="menuitem">Notre histoire</a>
+      </div>
+      <a href="contact.html" class="nav-cta">Nous contacter</a>
+      <button class="nav-burger" aria-label="Menu mobile" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" role="menu">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="chantiers.html" class="nav-link">Réalisations</a>
+    <a href="histoire.html" class="nav-link">Notre histoire</a>
+    <a href="contact.html" class="nav-cta btn-outline-dark btn">Nous contacter</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-labelledby="page-title">
+    <img class="page-hero-img" src="img/hero/58.jpg" alt="" loading="eager" fetchpriority="high">
+    <div class="container">
+      <div class="overline">Nos travaux</div>
+      <h1 id="page-title">Réalisations &amp; Chantiers</h1>
+      <p class="lead">Chaque projet est une histoire. Voici quelques-uns des chantiers dont nous sommes fiers — et que nos clients nous ont autorisé à partager.</p>
+    </div>
+  </section>
+
+  <!-- CHANTIERS -->
+  <section class="section" aria-labelledby="chantiers-heading">
+    <div class="container">
+
+      <!-- Filtres -->
+      <div class="filters" role="group" aria-label="Filtrer par type de travaux">
+        <button class="filter-btn active" data-filter="all">Tous les projets</button>
+        <button class="filter-btn" data-filter="renovation">Rénovation</button>
+        <button class="filter-btn" data-filter="maconnerie">Maçonnerie</button>
+        <button class="filter-btn" data-filter="electricite">Électricité</button>
+        <button class="filter-btn" data-filter="carrelage">Carrelage</button>
+        <button class="filter-btn" data-filter="peinture">Peinture</button>
+        <button class="filter-btn" data-filter="plomberie">Plomberie</button>
+        <button class="filter-btn" data-filter="exterieur">Extérieur</button>
+      </div>
+
+      <h2 id="chantiers-heading" class="sr-only">Liste des chantiers</h2>
+
+      <div class="chantiers-grid">
+
+        <article class="chantier-card" data-categories="maconnerie exterieur prestige">
+          <a href="travellers-club.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/1048/800/600" alt="Travellers Club — Terrasse des Champs-Élysées" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Prestige · Patrimoine</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Travellers Club — Terrasse des Champs-Élysées</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 23 av. des Champs-Élysées — 75008 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Maçonnerie</span><span class="chantier-tag">Pierre naturelle</span><span class="chantier-tag">Étanchéité</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation maison">
+          <a href="lafaye.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/436/800/600" alt="Maison M. Lafaye — Rénovation intégrale" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Rénovation complète</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Maison M. Lafaye — Rénovation intégrale</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> Boissy-sans-Avoir — 78490</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Rénovation</span><span class="chantier-tag">180 m²</span><span class="chantier-tag">TCE</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation tertiaire">
+          <a href="centre-sante-st-jacques.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/270/800/600" alt="Centre de Santé Saint-Jacques — Cabinets dentaires" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Santé · Tertiaire</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Centre de Santé Saint-Jacques — Cabinets dentaires</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 37 rue des Volontaires — 75015 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Aménagement</span><span class="chantier-tag">Tertiaire</span><span class="chantier-tag">Médical</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation prestige">
+          <a href="fondation-lejeune.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/414/800/600" alt="Institut Jérôme Lejeune — Hall d'accueil" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Prestige · Fondation</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Institut Jérôme Lejeune — Hall d'accueil</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 37 rue des Volontaires — 75015 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Restructuration</span><span class="chantier-tag">Hall</span><span class="chantier-tag">Institutions</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation prestige">
+          <a href="ecole-sainte-marie.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/221/800/600" alt="École Sainte-Marie de Neuilly — Salle à manger" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Éducation · Prestige</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">École Sainte-Marie de Neuilly — Salle à manger</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 24 bd Victor-Hugo — 92200 Neuilly-sur-Seine</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Rénovation</span><span class="chantier-tag">Établissement scolaire</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation prestige luxe">
+          <a href="sci-palomer.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/565/800/600" alt="Duplex face à Notre-Dame — SCI Palomer" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Rénovation luxe</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Duplex face à Notre-Dame — SCI Palomer</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 61 quai de la Tournelle — 75005 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Duplex</span><span class="chantier-tag">Vue Notre-Dame</span><span class="chantier-tag">Luxe</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation chauffage">
+          <a href="sainte-aubane-rivoli-2.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/387/800/600" alt="Sainte Aubane Immobilière — Plancher chauffant Rivoli" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Thermique · Luxe</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Sainte Aubane Immobilière — Plancher chauffant Rivoli</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 134 rue de Rivoli (2e Dr.) — 75001 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Plancher chauffant</span><span class="chantier-tag">Appartement</span><span class="chantier-tag">Centre Paris</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation prestige">
+          <a href="cabinet-mazet.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/493/800/600" alt="Cabinet Mazet & Gardy — Dernier étage Saint-Germain" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Saint-Germain · Prestige</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Cabinet Mazet & Gardy — Dernier étage Saint-Germain</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 206 bd Saint-Germain — 75007 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Dernier étage</span><span class="chantier-tag">Rénovation</span><span class="chantier-tag">Haussmannien</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation">
+          <a href="sainte-aubane-rivoli-6.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/319/800/600" alt="Sainte Aubane Immobilière — Rénovation Rivoli 6e" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Rénovation complète</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Sainte Aubane Immobilière — Rénovation Rivoli 6e</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 134 rue de Rivoli (6e G) — 75001 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Rénovation complète</span><span class="chantier-tag">Paris Centre</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <article class="chantier-card" data-categories="renovation prestige luxe">
+          <a href="rothschild-varenne.html" style="display:flex;flex-direction:column;flex:1;color:inherit;text-decoration:none;">
+            <div class="chantier-img" style="position:relative;overflow:hidden;height:220px;">
+              <img src="https://picsum.photos/seed/722/800/600" alt="Hôtel particulier — Famille Rothschild, Rue de Varenne" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;">
+              <span class="chantier-badge">Grand prestige · MH</span>
+            </div>
+            <div class="chantier-body">
+              <h3 class="chantier-title">Hôtel particulier — Famille Rothschild, Rue de Varenne</h3>
+              <div class="chantier-address" style="display:flex;align-items:center;gap:0.4rem;font-size:0.82rem;color:var(--color-text-muted);margin-top:0.4rem;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 42 rue de Varenne — 75007 Paris</div>
+              <div class="chantier-footer">
+                <div class="chantier-tags"><span class="chantier-tag">Hôtel particulier</span><span class="chantier-tag">Prestige</span><span class="chantier-tag">Rénovation</span></div>
+                <div class="chantier-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Note ajout de chantiers -->
+      <div class="fade-in" style="margin-top:3rem; padding:2rem; background:var(--color-surface); border-radius:var(--radius); border-left:3px solid var(--color-gold); display:flex; gap:1.5rem; align-items:flex-start; flex-wrap:wrap;">
+        <div>
+          <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:0.75rem;">
+            <strong style="color:var(--color-text);">Vous avez un projet en tête ?</strong> Ces réalisations sont un aperçu de notre savoir-faire. Chaque chantier est unique — contactez-nous pour discuter du vôtre.
+          </p>
+          <a href="contact.html" class="btn btn-dark" style="display:inline-flex;">Demander un devis gratuit</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+        <img class="site-logo site-logo--white" src="img/site/CCB%20-%20Temporary%20logo%20-%20white.svg" alt="CCB — Concept Création Bâtiment" loading="lazy">
+          <p>Entreprise générale du bâtiment. Construction, rénovation et extension — de la fondation aux finitions.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="chantiers.html">Réalisations</a></li>
+            <li><a href="histoire.html">Notre histoire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Métiers</h5>
+          <ul>
+            <li><a href="chantiers.html">Maçonnerie</a></li>
+            <li><a href="chantiers.html">Rénovation</a></li>
+            <li><a href="chantiers.html">Électricité</a></li>
+            <li><a href="chantiers.html">Plomberie</a></li>
+            <li><a href="chantiers.html">Peinture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Certifications</h5>
+          <div class="footer-certifs">
+            <div class="footer-certif">Certification CIP</div>
+            <div class="footer-certif">Membre FFB</div>
+            <div class="footer-certif">Electricien Elexijum</div>
+            <div class="footer-certif">Artisan de Confiance MAAF</div>
+          </div>
+          <div style="margin-top:1.5rem;">
+            <a href="mailto:contact@steccb.com" style="font-size:0.85rem; color:rgba(255,255,255,0.5);">contact@steccb.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 CCB — Concept Création Bâtiment. Tous droits réservés.</div>
+        <div class="footer-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="politique-cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

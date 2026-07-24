@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCB — Concept Création Bâtiment | Maçonnerie &amp; Rénovation</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="CCB, entreprise générale du bâtiment — maçonnerie, rénovation complète, électricité, plomberie, carrelage, peinture. Certifiée CIP, FFB, Elexijum.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="CCB — Accueil">
+        <img class="site-logo site-logo--white" src="img/site/CCB%20-%20Temporary%20logo%20-%20white.svg" alt="CCB — Concept Création Bâtiment" loading="eager">
+        <img class="site-logo site-logo--dark"  src="img/site/CCB%20-%20temporary%20logo%20-%20Dark.svg"  alt="CCB — Concept Création Bâtiment" loading="eager">
+      </a>
+
+      <div class="nav-links" role="menubar">
+        <a href="index.html"    class="nav-link" role="menuitem">Accueil</a>
+        <a href="chantiers.html" class="nav-link" role="menuitem">Réalisations</a>
+        <a href="histoire.html"  class="nav-link" role="menuitem">Notre histoire</a>
+      </div>
+
+      <a href="contact.html" class="nav-cta">Nous contacter</a>
+
+      <button class="nav-burger" aria-label="Menu mobile" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" role="menu" aria-label="Menu mobile">
+    <a href="index.html"     class="nav-link">Accueil</a>
+    <a href="chantiers.html" class="nav-link">Réalisations</a>
+    <a href="histoire.html"  class="nav-link">Notre histoire</a>
+    <a href="contact.html"   class="btn btn-outline-dark btn" style="text-align:center;">Nous contacter</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <!-- Background — swap div content pour <video> -->
+    <div class="hero-bg" aria-hidden="true">
+    <img class="hero-bg-img" src="img/hero/2150760977.jpg" alt="" loading="eager" fetchpriority="high">
+  </div>
+
+    <!-- Monogramme animé flottant -->
+    <!-- Contenu éditorial -->
+    <div class="container hero-editorial">
+      <div class="hero-text-block">
+        <div class="hero-overline-editorial">Entreprise générale du bâtiment · Fondée en 1968</div>
+        <h1 class="hero-title-xl" id="hero-heading">
+          Construire.<br>
+          <em>Rénover.</em><br>
+          Durer.
+        </h1>
+        <p class="hero-desc">
+          De la fondation aux finitions, CCB coordonne tous les corps de métier
+          sous un seul interlocuteur — pour des chantiers livrés avec rigueur
+          et fierté.
+        </p>
+        <div class="hero-actions-editorial">
+          <a href="chantiers.html" class="btn-arrow btn-arrow-filled">
+            Voir nos réalisations
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="contact.html" class="btn-arrow">
+            Devis gratuit
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <!-- Certifications strip — bas du hero -->
+    <div class="hero-certif-strip" aria-label="Certifications">
+      <div class="container hero-certif-inner">
+        <span class="hero-certif-label">Certifications & labels</span>
+        <div class="hero-certif-logos">
+          <img src="img/logos/certifications/image%20272%20%5BVectorized%5D.png" alt="CIP — Certificat d'Identité Professionnelle" class="hero-certif-logo" loading="eager">
+          <img src="img/logos/certifications/image%20274%20%5BVectorized%5D.png" alt="Électricien Elexium" class="hero-certif-logo" loading="eager">
+          <img src="img/logos/certifications/image%20313.png" alt="FFB — Fédération Française du Bâtiment" class="hero-certif-logo" loading="eager">
+          <img src="img/logos/certifications/image%20315.png" alt="Artisan de Confiance — Label MAAF" class="hero-certif-logo" loading="eager">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES NUMÉROTÉS (Evolut style) ===== -->
+  <section class="section has-sketch" aria-labelledby="services-heading">
+    <!-- Colonnade architecturale en arrière-plan (parallaxe) -->
+    <div class="sketch-layer" aria-hidden="true">
+      <svg viewBox="0 0 1400 520" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+        <!-- Entablature -->
+        <line x1="0" y1="48" x2="1400" y2="48" stroke-width="1.8" pathLength="1"/>
+        <line x1="0" y1="58" x2="1400" y2="58" stroke-width="0.8" pathLength="1"/>
+        <line x1="0" y1="65" x2="1400" y2="65" stroke-width="0.5" pathLength="1"/>
+        <!-- Stylobate -->
+        <line x1="0" y1="440" x2="1400" y2="440" stroke-width="0.6" pathLength="1"/>
+        <line x1="0" y1="450" x2="1400" y2="450" stroke-width="1.8" pathLength="1"/>
+        <line x1="0" y1="462" x2="1400" y2="462" stroke-width="0.5" pathLength="1"/>
+        <!-- Shafts des colonnes (6, les 2 extrêmes débordent) -->
+        <rect x="-24" y="65" width="28" height="375" stroke-width="1.2" pathLength="1"/>
+        <rect x="256" y="65" width="28" height="375" stroke-width="1.2" pathLength="1"/>
+        <rect x="536" y="65" width="28" height="375" stroke-width="1.2" pathLength="1"/>
+        <rect x="816" y="65" width="28" height="375" stroke-width="1.2" pathLength="1"/>
+        <rect x="1096" y="65" width="28" height="375" stroke-width="1.2" pathLength="1"/>
+        <rect x="1376" y="65" width="28" height="375" stroke-width="1.2" pathLength="1"/>
+        <!-- Chapiteaux (4 colonnes intérieures) -->
+        <rect x="248" y="48" width="44" height="10" stroke-width="0.7" pathLength="1"/>
+        <rect x="528" y="48" width="44" height="10" stroke-width="0.7" pathLength="1"/>
+        <rect x="808" y="48" width="44" height="10" stroke-width="0.7" pathLength="1"/>
+        <rect x="1088" y="48" width="44" height="10" stroke-width="0.7" pathLength="1"/>
+        <!-- Bases (4 colonnes intérieures) -->
+        <rect x="248" y="440" width="44" height="9" stroke-width="0.7" pathLength="1"/>
+        <rect x="244" y="449" width="52" height="9" stroke-width="0.5" pathLength="1"/>
+        <rect x="528" y="440" width="44" height="9" stroke-width="0.7" pathLength="1"/>
+        <rect x="524" y="449" width="52" height="9" stroke-width="0.5" pathLength="1"/>
+        <rect x="808" y="440" width="44" height="9" stroke-width="0.7" pathLength="1"/>
+        <rect x="804" y="449" width="52" height="9" stroke-width="0.5" pathLength="1"/>
+        <rect x="1088" y="440" width="44" height="9" stroke-width="0.7" pathLength="1"/>
+        <rect x="1084" y="449" width="52" height="9" stroke-width="0.5" pathLength="1"/>
+        <!-- Cannelures (3 lignes fines par colonne intérieure) -->
+        <line x1="263" y1="65" x2="263" y2="440" stroke-width="0.3" pathLength="1"/><line x1="270" y1="65" x2="270" y2="440" stroke-width="0.3" pathLength="1"/><line x1="277" y1="65" x2="277" y2="440" stroke-width="0.3" pathLength="1"/>
+        <line x1="543" y1="65" x2="543" y2="440" stroke-width="0.3" pathLength="1"/><line x1="550" y1="65" x2="550" y2="440" stroke-width="0.3" pathLength="1"/><line x1="557" y1="65" x2="557" y2="440" stroke-width="0.3" pathLength="1"/>
+        <line x1="823" y1="65" x2="823" y2="440" stroke-width="0.3" pathLength="1"/><line x1="830" y1="65" x2="830" y2="440" stroke-width="0.3" pathLength="1"/><line x1="837" y1="65" x2="837" y2="440" stroke-width="0.3" pathLength="1"/>
+        <line x1="1103" y1="65" x2="1103" y2="440" stroke-width="0.3" pathLength="1"/><line x1="1110" y1="65" x2="1110" y2="440" stroke-width="0.3" pathLength="1"/><line x1="1117" y1="65" x2="1117" y2="440" stroke-width="0.3" pathLength="1"/>
+        <!-- Arcs plein cintre (5 travées) -->
+        <path d="M 4,450 L 4,191 A 126,126 0 0,1 256,191 L 256,450" stroke-width="1.2" pathLength="1"/>
+        <path d="M 284,450 L 284,191 A 126,126 0 0,1 536,191 L 536,450" stroke-width="1.2" pathLength="1"/>
+        <path d="M 564,450 L 564,191 A 126,126 0 0,1 816,191 L 816,450" stroke-width="1.2" pathLength="1"/>
+        <path d="M 844,450 L 844,191 A 126,126 0 0,1 1096,191 L 1096,450" stroke-width="1.2" pathLength="1"/>
+        <path d="M 1124,450 L 1124,191 A 126,126 0 0,1 1376,191 L 1376,450" stroke-width="1.2" pathLength="1"/>
+        <!-- Claveaux de clé de voûte -->
+        <line x1="130" y1="58" x2="130" y2="80" stroke-width="1.6" pathLength="1"/>
+        <line x1="410" y1="58" x2="410" y2="80" stroke-width="1.6" pathLength="1"/>
+        <line x1="690" y1="58" x2="690" y2="80" stroke-width="1.6" pathLength="1"/>
+        <line x1="970" y1="58" x2="970" y2="80" stroke-width="1.6" pathLength="1"/>
+        <line x1="1250" y1="58" x2="1250" y2="80" stroke-width="1.6" pathLength="1"/>
+        <!-- Ligne de cote architecturale (gauche) -->
+        <line x1="-48" y1="65" x2="-38" y2="65" stroke-width="0.5" pathLength="1"/>
+        <line x1="-48" y1="440" x2="-38" y2="440" stroke-width="0.5" pathLength="1"/>
+        <line x1="-43" y1="65" x2="-43" y2="440" stroke-width="0.35" pathLength="1"/>
+        <path d="M -46,74 L -43,65 L -40,74" stroke-width="0.5" pathLength="1"/>
+        <path d="M -46,431 L -43,440 L -40,431" stroke-width="0.5" pathLength="1"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="services-numbered-header fade-in">
+        <div>
+          <div class="overline">Savoir-faire</div>
+          <h2 id="services-heading">Un seul interlocuteur,<br>tous les corps de métier</h2>
+        </div>
+        <a href="contact.html" class="btn btn-outline-dark" style="flex-shrink:0;">
+          Demander un devis
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left:0.4rem;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="services-numbered-grid fade-in">
+
+        <!-- 01 -->
+        <div class="sn-item">
+          <span class="sn-num">01</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="18" width="44" height="22" rx="1"/>
+              <path d="M1 18 L26 4 L51 18"/>
+              <rect x="18" y="26" width="14" height="14" rx="1"/>
+            </svg>
+          </div>
+          <h3>Gros Œuvre &amp; Maçonnerie</h3>
+          <p>Fondations, murs porteurs, dalles, chapes, béton armé. La solidité structurelle de vos constructions et rénovations.</p>
+        </div>
+
+        <!-- 02 -->
+        <div class="sn-item">
+          <span class="sn-num">02</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 40 L4 12 Q4 8 8 8 L44 8 Q48 8 48 12 L48 40"/>
+              <path d="M1 40 L51 40"/>
+              <rect x="10" y="16" width="10" height="10" rx="1"/>
+              <rect x="32" y="16" width="10" height="10" rx="1"/>
+              <rect x="18" y="26" width="16" height="14"/>
+              <path d="M20 20 A4 4 0 0 1 32 20"/>
+            </svg>
+          </div>
+          <h3>Rénovation Complète</h3>
+          <p>Transformation et réhabilitation clé en main. Coordination de l'ensemble des corps de métier pour une livraison sans couture.</p>
+        </div>
+
+        <!-- 03 -->
+        <div class="sn-item">
+          <span class="sn-num">03</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round">
+              <circle cx="26" cy="22" r="10"/>
+              <path d="M26 4 L26 10 M26 34 L26 40 M8 22 L14 22 M38 22 L44 22"/>
+              <path d="M13 9 L17 13 M35 31 L39 35 M39 9 L35 13 M17 31 L13 35"/>
+            </svg>
+          </div>
+          <h3>Électricité</h3>
+          <p>Installation, mise en conformité NF C 15-100, domotique. Certifiés <strong>Elexijum</strong> — sécurité et performance garanties.</p>
+        </div>
+
+        <!-- 04 -->
+        <div class="sn-item">
+          <span class="sn-num">04</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round">
+              <path d="M14 40 L14 24 Q14 16 22 16 L30 16 Q38 16 38 24 L38 28"/>
+              <path d="M38 28 Q46 28 46 34 L46 40"/>
+              <path d="M6 40 L48 40"/>
+              <circle cx="18" cy="10" r="5"/>
+            </svg>
+          </div>
+          <h3>Plomberie &amp; Sanitaire</h3>
+          <p>Réseaux d'alimentation, évacuations, salles de bain, cuisines. Dépannage et création, intervention rapide.</p>
+        </div>
+
+        <!-- 05 -->
+        <div class="sn-item">
+          <span class="sn-num">05</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round">
+              <rect x="4" y="4" width="20" height="20" rx="1"/>
+              <rect x="28" y="4" width="20" height="20" rx="1"/>
+              <rect x="4" y="28" width="20" height="16" rx="1"/>
+              <rect x="28" y="28" width="20" height="16" rx="1"/>
+            </svg>
+          </div>
+          <h3>Carrelage &amp; Revêtements</h3>
+          <p>Carrelage grand format, faïence, parquet, pierre naturelle. Des finitions soignées dans chaque pièce.</p>
+        </div>
+
+        <!-- 06 -->
+        <div class="sn-item">
+          <span class="sn-num">06</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round">
+              <path d="M8 34 Q14 24 20 30 Q26 36 32 24 Q38 12 44 18"/>
+              <path d="M4 40 L48 40"/>
+              <path d="M30 10 Q32 6 38 8 L36 14 Q34 18 30 16 Z"/>
+            </svg>
+          </div>
+          <h3>Peinture &amp; Finitions</h3>
+          <p>Peinture intérieure et extérieure, ravalement, enduits décoratifs. La touche finale qui fait la différence.</p>
+        </div>
+
+        <!-- 07 -->
+        <div class="sn-item">
+          <span class="sn-num">07</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round">
+              <rect x="10" y="10" width="32" height="24" rx="2"/>
+              <path d="M18 10 L18 34 M26 10 L26 34 M34 10 L34 34"/>
+              <path d="M14 40 L14 34 M38 40 L38 34"/>
+            </svg>
+          </div>
+          <h3>Chauffage</h3>
+          <p>Installation et entretien de systèmes de chauffage, pompes à chaleur, planchers chauffants. Confort et économies d'énergie.</p>
+        </div>
+
+        <!-- 08 -->
+        <div class="sn-item">
+          <span class="sn-num">08</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round">
+              <rect x="10" y="6" width="32" height="32" rx="1"/>
+              <path d="M26 6 L26 38"/>
+              <circle cx="22" cy="22" r="1.4"/>
+              <circle cx="30" cy="22" r="1.4"/>
+            </svg>
+          </div>
+          <h3>Agencement &amp; Menuiserie</h3>
+          <p>Menuiserie sur-mesure, dressings, bibliothèques, portes et placards. Des aménagements pensés au millimètre.</p>
+        </div>
+
+        <!-- 09 -->
+        <div class="sn-item">
+          <span class="sn-num">09</span>
+          <div class="sn-geo" aria-hidden="true">
+            <svg width="52" height="44" viewBox="0 0 52 44" fill="none" stroke-width="1.2" stroke-linecap="round">
+              <path d="M4 38 L48 38"/>
+              <path d="M8 38 L8 24 L20 18 L20 38"/>
+              <path d="M28 38 L28 28 Q28 22 36 22 Q44 22 44 28 L44 38"/>
+              <path d="M4 38 Q26 32 48 38"/>
+            </svg>
+          </div>
+          <h3>Aménagements Extérieurs</h3>
+          <p>Terrasses, allées, clôtures, murets, dallages. Des espaces extérieurs pensés pour durer.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MANIFESTO ===== -->
+  <section class="manifesto manifesto--photo fade-in" aria-label="Notre engagement">
+    <div class="manifesto-bg" aria-hidden="true">
+      <img src="img/hero/58.jpg" alt="" loading="lazy">
+    </div>
+    <div class="manifesto-glow" aria-hidden="true"></div>
+    <div class="container" style="position:relative; z-index:2;">
+      <div class="manifesto-overline">Notre engagement</div>
+      <h2 class="manifesto-quote">
+        Construire juste,<br>
+        livrer avec <em>fierté.</em>
+      </h2>
+      <p class="manifesto-sub">
+        Chaque chantier CCB est une promesse tenue — des matériaux choisis,
+        des artisans qualifiés, un interlocuteur unique du premier coup de pioche
+        jusqu'à la remise des clés.
+      </p>
+      <a href="histoire.html" class="btn-arrow" style="display:inline-flex; margin-top:1rem;">
+        Notre histoire
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ===== CLIENTS DE RÉFÉRENCE — LOGOS ===== -->
+  <div class="references-marquee" aria-label="Clients de référence">
+    <div class="marquee-label">Ils nous ont fait confiance</div>
+    <div class="marquee-track-wrap">
+      <div class="marquee-track">
+        <div class="marquee-set">
+          <div class="logo-strip-item"><img src="img/logos/clients/75eeba57-720f-4ecb-b267-e98fec41802f-Socateb-Logo%201.png" alt="SOCATEB" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/86658b0e-01c1-43b0-b89a-91c63c606bf5-logo-alt%201.png" alt="Sainte-Marie de Neuilly" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20266%20%5BVectorized%5D.png" alt="ORPEA" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20267%20%5BVectorized%5D.png" alt="Generali Real Estate" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20268.png" alt="Paris Saint-Germain" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20269%20%5BVectorized%5D.png" alt="Centre de Santé Saint-Jacques" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20270.png" alt="CDH" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20271%20%5BVectorized%5D.png" alt="Maison Adisson" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20316%20%5BVectorized%5D.png" alt="Travellers Club" loading="lazy"></div>
+        </div>
+        <div class="marquee-set" aria-hidden="true">
+          <div class="logo-strip-item"><img src="img/logos/clients/75eeba57-720f-4ecb-b267-e98fec41802f-Socateb-Logo%201.png" alt="SOCATEB" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/86658b0e-01c1-43b0-b89a-91c63c606bf5-logo-alt%201.png" alt="Sainte-Marie de Neuilly" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20266%20%5BVectorized%5D.png" alt="ORPEA" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20267%20%5BVectorized%5D.png" alt="Generali Real Estate" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20268.png" alt="Paris Saint-Germain" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20269%20%5BVectorized%5D.png" alt="Centre de Santé Saint-Jacques" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20270.png" alt="CDH" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20271%20%5BVectorized%5D.png" alt="Maison Adisson" loading="lazy"></div>
+          <div class="logo-strip-item"><img src="img/logos/clients/image%20316%20%5BVectorized%5D.png" alt="Travellers Club" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== RÉALISATIONS ===== -->
+  <section class="section section--surface" aria-labelledby="realisations-heading">
+    <div class="container">
+      <div class="section-header fade-in" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
+        <div>
+          <div class="overline">Réalisations</div>
+          <h2 id="realisations-heading">Nos derniers chantiers</h2>
+        </div>
+        <a href="chantiers.html" class="btn btn-outline-dark">Voir tous les projets</a>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Card 1 — Travellers Club -->
+        <article class="project-card fade-in">
+          <a href="travellers-club.html" style="display:flex;flex-direction:column;flex:1;color:inherit;">
+            <div class="project-img-wrap">
+              <img src="https://picsum.photos/seed/1048/800/600" alt="Travellers Club — Terrasse des Champs-Élysées" loading="lazy">
+              <span class="project-badge">Prestige · MH</span>
+            </div>
+            <div class="project-body">
+              <h3>Travellers Club — Terrasse des Champs-Élysées</h3>
+              <div class="project-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 23 av. des Champs-Élysées — 75008 Paris</div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="project-tag">Maçonnerie</span>
+                  <span class="project-tag">Pierre naturelle</span>
+                </div>
+                <div class="project-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 2 — Duplex Tournelle -->
+        <article class="project-card fade-in">
+          <a href="sci-palomer.html" style="display:flex;flex-direction:column;flex:1;color:inherit;">
+            <div class="project-img-wrap">
+              <img src="https://picsum.photos/seed/565/800/600" alt="Duplex Quai de la Tournelle — Vue Notre-Dame" loading="lazy">
+              <span class="project-badge">Rénovation luxe</span>
+            </div>
+            <div class="project-body">
+              <h3>Duplex face à Notre-Dame — Quai de la Tournelle</h3>
+              <div class="project-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 61 quai de la Tournelle — 75005 Paris</div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="project-tag">Rénovation TCE</span>
+                  <span class="project-tag">Duplex</span>
+                </div>
+                <div class="project-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 3 — Hôtel particulier Rothschild -->
+        <article class="project-card fade-in">
+          <a href="rothschild-varenne.html" style="display:flex;flex-direction:column;flex:1;color:inherit;">
+            <div class="project-img-wrap">
+              <img src="https://picsum.photos/seed/722/800/600" alt="Hôtel particulier — Famille Rothschild" loading="lazy">
+              <span class="project-badge">Grand prestige</span>
+            </div>
+            <div class="project-body">
+              <h3>Hôtel particulier — Famille Rothschild, Rue de Varenne</h3>
+              <div class="project-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg> 42 rue de Varenne — 75007 Paris</div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="project-tag">Rénovation</span>
+                  <span class="project-tag">Hôtel particulier</span>
+                </div>
+                <div class="project-arrow-btn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAVAILLER AVEC CCB — ÉTAPES ===== -->
+  <section class="etapes-section" aria-labelledby="etapes-heading">
+
+    <div class="etapes-top fade-in">
+      <div class="overline" style="justify-content:center;display:flex;">Notre méthode</div>
+      <h2 id="etapes-heading">Travailler avec <em>CCB</em></h2>
+    </div>
+
+    <div class="etapes-stage">
+
+      <!-- Étape 01 -->
+      <div class="etape-col" data-step="0">
+        <div class="etape-label etape-label--low">
+          <h3 class="etape-title">Premier<br>contact</h3>
+          <p class="etape-body">Échange téléphonique gratuit. Vous décrivez votre projet, nous posons les bonnes questions.</p>
+        </div>
+        <div class="etape-connector">
+          <div class="etape-dot"></div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-timing">
+          <span class="etape-duration">24 h</span>
+          <span class="etape-bar"></span>
+        </div>
+      </div>
+
+      <!-- Étape 02 -->
+      <div class="etape-col" data-step="1">
+        <div class="etape-label etape-label--mid">
+          <h3 class="etape-title">Visite &amp;<br>devis</h3>
+          <p class="etape-body">Nous venons sur place. Chiffrage détaillé remis sous 48 h, sans mauvaise surprise.</p>
+        </div>
+        <div class="etape-connector">
+          <div class="etape-dot"></div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-timing">
+          <span class="etape-duration">48 h</span>
+          <span class="etape-bar"></span>
+        </div>
+      </div>
+
+      <!-- Étape 03 -->
+      <div class="etape-col" data-step="2">
+        <div class="etape-label etape-label--high">
+          <h3 class="etape-title">Réalisation<br>du chantier</h3>
+          <p class="etape-body">Un seul interlocuteur coordonne tous les corps de métier. Suivi en temps réel.</p>
+        </div>
+        <div class="etape-connector">
+          <div class="etape-dot"></div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-timing">
+          <span class="etape-duration">Selon projet</span>
+          <span class="etape-bar"></span>
+        </div>
+      </div>
+
+      <!-- Étape 04 -->
+      <div class="etape-col" data-step="3">
+        <div class="etape-label etape-label--top">
+          <h3 class="etape-title">Livraison<br>&amp; garanties</h3>
+          <p class="etape-body">Réception contradictoire, garantie décennale, suivi post-chantier.</p>
+        </div>
+        <div class="etape-connector">
+          <div class="etape-dot"></div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-timing">
+          <span class="etape-duration">J+livraison</span>
+          <span class="etape-bar"></span>
+        </div>
+      </div>
+
+      <!-- Ligne horizontale reliant les colonnes -->
+      <div class="etapes-baseline" aria-hidden="true"></div>
+
+    </div>
+  </section>
+
+  <!-- ===== AVIS CLIENTS ===== -->
+  <section class="section reviews-section" aria-labelledby="reviews-heading">
+    <div class="container reviews-outer">
+
+      <!-- Colonne gauche sticky -->
+      <div class="reviews-left fade-in">
+        <div class="reviews-quote-icon" aria-hidden="true">
+          <svg viewBox="0 0 60 44" fill="none"><path d="M0 44V26.4C0 11.467 8.4 3.2 25.2 0l3.6 5.6C20.267 7.467 15.2 12.267 14.4 20H24V44H0zm36 0V26.4C36 11.467 44.4 3.2 61.2 0l3.6 5.6C56.267 7.467 51.2 12.267 50.4 20H60V44H36z" fill="currentColor"/></svg>
+        </div>
+        <h2 id="reviews-heading" class="reviews-heading">Ce que disent<br>nos clients</h2>
+        <div class="reviews-score">
+          <div class="reviews-stars" aria-label="Note 4.8 sur 5">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.5.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.5.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.5.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.5.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.5.91-5.32L2.27 6.62l5.34-.78L10 1z"/></svg>
+          </div>
+          <span class="reviews-score-num">4,8<span class="reviews-score-max">/5</span></span>
+        </div>
+        <p class="reviews-count">Basé sur les retours de nos clients</p>
+        <div class="reviews-nav" aria-label="Navigation avis">
+          <button class="reviews-nav-btn" id="rev-prev" aria-label="Avis précédent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          </button>
+          <div class="reviews-nav-track" id="rev-track-indicator"></div>
+          <button class="reviews-nav-btn" id="rev-next" aria-label="Avis suivant">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Colonne droite — carrousel -->
+      <div class="reviews-right">
+        <div class="reviews-track" id="reviews-track">
+
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote class="review-text">Rénovation complète de notre appartement au 7e arrondissement. CCB a coordonné tous les corps de métier avec une précision remarquable. Délais tenus, finitions impeccables. On recommande sans hésiter.</blockquote>
+            <footer class="review-footer">
+              <div class="review-avatar" aria-hidden="true">MF</div>
+              <div>
+                <div class="review-name">Marie-Claire F.</div>
+                <div class="review-meta">Rénovation complète · Paris 7e</div>
+              </div>
+            </footer>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote class="review-text">Chantier d'extension maçonnerie et dallage. Jean-Pierre a suivi le projet personnellement du début à la fin. Travail soigné, équipe sérieuse et ponctuelle. Le résultat dépasse nos attentes.</blockquote>
+            <footer class="review-footer">
+              <div class="review-avatar" aria-hidden="true">JB</div>
+              <div>
+                <div class="review-name">Jean-Baptiste M.</div>
+                <div class="review-meta">Maçonnerie & extension · Neuilly</div>
+              </div>
+            </footer>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote class="review-text">Mise en conformité électrique et installation domotique dans notre maison du 16e. Certifiés Elexijum, ils maîtrisent parfaitement les normes NF C 15-100. Aucune mauvaise surprise, devis respecté.</blockquote>
+            <footer class="review-footer">
+              <div class="review-avatar" aria-hidden="true">SR</div>
+              <div>
+                <div class="review-name">Sophie R.</div>
+                <div class="review-meta">Électricité & domotique · Paris 16e</div>
+              </div>
+            </footer>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote class="review-text">Réfection complète de toiture en zinc sur notre hôtel particulier. Travail d'artisan, respect du patrimoine architectural. CCB est l'une des rares entreprises à encore maîtriser la zinguerie traditionnelle parisienne.</blockquote>
+            <footer class="review-footer">
+              <div class="review-avatar" aria-hidden="true">AD</div>
+              <div>
+                <div class="review-name">Arnaud D.</div>
+                <div class="review-meta">Toiture & zinguerie · Paris 8e</div>
+              </div>
+            </footer>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
+            <blockquote class="review-text">Salle de bain et plomberie intégrale refaites en deux semaines chrono. L'équipe est propre, discrète et efficace. Un seul interlocuteur pour tout — c'est ce qui fait toute la différence quand on habite sur place.</blockquote>
+            <footer class="review-footer">
+              <div class="review-avatar" aria-hidden="true">IC</div>
+              <div>
+                <div class="review-name">Isabelle C.</div>
+                <div class="review-meta">Plomberie & salle de bain · Boulogne</div>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT RAPIDE ===== -->
+  <section class="section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-home-grid">
+        <div class="fade-in">
+          <div class="overline">Contact</div>
+          <h2 id="contact-heading">Parlez-nous de votre projet</h2>
+          <p class="lead" style="margin-top:1rem;">Devis gratuit sous 48 h. Nous intervenons à Paris et en Île-de-France.</p>
+
+          <div class="contact-details" style="margin-top:2rem;">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 5a2 2 0 0 1 2-2h3.28a1 1 0 0 1 .95.68l1.45 4.36a1 1 0 0 1-.23 1.04L8.9 10.56s1.15 2.3 2.54 3.7 3.7 2.54 3.7 2.54l1.48-1.55a1 1 0 0 1 1.04-.23l4.36 1.45A1 1 0 0 1 23 17.72V21a2 2 0 0 1-2 2h-1C9.16 23 1 14.84 1 5V4a2 2 0 0 1 2-1z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Téléphone</div>
+                <div class="contact-detail-value"><a href="tel:+33600000000">— à compléter —</a></div>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">E-mail</div>
+                <div class="contact-detail-value"><a href="mailto:contact@steccb.com">contact@steccb.com</a></div>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-dark" style="margin-top:1.5rem; display:inline-flex;">
+            Page contact complète
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin-left:0.4rem;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="fade-in">
+          <form id="contact-form" action="https://formspree.io/f/VOTRE_ID_ICI" method="POST" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" required autocomplete="family-name">
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+              <div class="form-group full">
+                <label for="type_travaux">Type de travaux</label>
+                <select id="type_travaux" name="type_travaux">
+                  <option value="">— Sélectionnez —</option>
+                  <option>Gros œuvre / Maçonnerie</option>
+                  <option>Rénovation complète</option>
+                  <option>Électricité</option>
+                  <option>Plomberie / Sanitaire</option>
+                  <option>Carrelage / Revêtements</option>
+                  <option>Peinture / Finitions</option>
+                  <option>Charpente / Toiture</option>
+                  <option>Isolation</option>
+                  <option>Aménagements extérieurs</option>
+                  <option>Autre</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="message">Description du projet *</label>
+                <textarea id="message" name="message" required placeholder="Nature des travaux, surface, localisation, délai souhaité…"></textarea>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+              <span class="form-notice">Réponse sous 48 h ouvrées</span>
+            </div>
+          </form>
+          <div class="form-success" role="alert" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 12 L11 15 L16 9"/>
+            </svg>
+            <h4>Message envoyé !</h4>
+            <p>Nous vous recontacterons dans les 48 heures ouvrées. Merci de votre confiance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+        <img class="site-logo site-logo--white" src="img/site/CCB%20-%20Temporary%20logo%20-%20white.svg" alt="CCB — Concept Création Bâtiment" loading="lazy">
+          <p>Entreprise générale du bâtiment. Construction, rénovation et extension — de la fondation aux finitions.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="chantiers.html">Réalisations</a></li>
+            <li><a href="histoire.html">Notre histoire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Métiers</h5>
+          <ul>
+            <li><a href="chantiers.html">Maçonnerie</a></li>
+            <li><a href="chantiers.html">Rénovation</a></li>
+            <li><a href="chantiers.html">Électricité</a></li>
+            <li><a href="chantiers.html">Plomberie</a></li>
+            <li><a href="chantiers.html">Peinture</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Certifications</h5>
+          <div class="footer-certifs">
+            <div class="footer-certif">Certification CIP</div>
+            <div class="footer-certif">Membre FFB</div>
+            <div class="footer-certif">Electricien Elexijum</div>
+            <div class="footer-certif">Artisan de Confiance MAAF</div>
+          </div>
+          <div style="margin-top:1.5rem;">
+            <a href="mailto:contact@steccb.com" style="font-size:0.85rem; color:rgba(255,255,255,0.5);">contact@steccb.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 CCB — Concept Création Bâtiment. Tous droits réservés.</div>
+        <div class="footer-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="politique-cookies.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
