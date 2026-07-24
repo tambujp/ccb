@@ -1,6 +1,9 @@
 # macOS
 .DS_Store
 
+# Photos brutes non compressées (backup local uniquement, pas utilisées par le site)
+img/chantiers/*/_originaux/
+
 # Vercel
 .vercel
 

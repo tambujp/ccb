@@ -4811,3 +4811,28 @@ p { max-width: 65ch; }
   .methode-card { width: 100%; margin-left: 0 !important; }
   .methode-flow { gap: 2.2rem; }
 }
+
+/* Lien discret « En savoir plus » sur les cartes savoir-faire */
+.sn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.1rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  opacity: 0.75;
+  transition: color 0.25s, gap 0.25s, opacity 0.25s;
+}
+.sn-link svg {
+  width: 13px;
+  height: 13px;
+  transition: transform 0.25s;
+}
+.sn-item:hover .sn-link,
+.sn-link:hover {
+  color: var(--color-gold);
+  opacity: 1;
+  gap: 0.6rem;
+}
+.sn-link:hover svg { transform: translateX(2px); }
