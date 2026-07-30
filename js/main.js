@@ -398,24 +398,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 
 
-  /* === Étapes — apparition en cascade === */
-  (() => {
-    const items = document.querySelectorAll('.etape-col, .etape-item');
-    if (!items.length) return;
-
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-visible');
-          obs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
-    items.forEach(el => obs.observe(el));
-  })();
-
-
 /* === Bandeau de consentement cookies === */
 (() => {
   const STORAGE_KEY = 'ccb_cookie_consent';
@@ -501,16 +483,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
-/* === Section « Notre méthode » — bordure dorée en progression (pur CSS, déclenché au scroll) === */
+/* === Section « Étapes » — réglet + jalons animés (pur CSS, déclenché au scroll) === */
 (() => {
-  const process = document.querySelector('.methode-process');
-  if (!process) return;
+  const blocs = document.querySelectorAll('.parcours');
+  if (!blocs.length) return;
 
   const obs = new IntersectionObserver(entries => {
-    if (entries[0].isIntersecting) {
-      process.classList.add('is-in');
-      obs.disconnect();
-    }
-  }, { threshold: 0.25 });
-  obs.observe(process);
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-in');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  blocs.forEach(b => obs.observe(b));
 })();
