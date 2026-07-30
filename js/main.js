@@ -54,7 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.classList.add('active');
         const cat = btn.dataset.filter;
         chantierCards.forEach(card => {
-          const cats = card.dataset.categories.split(',');
+          // les catégories sont séparées par des espaces (et/ou des virgules)
+          const cats = card.dataset.categories.split(/[\s,]+/).filter(Boolean);
           const show = cat === 'all' || cats.includes(cat);
           card.style.display = show ? '' : 'none';
         });

@@ -4754,3 +4754,126 @@ p { max-width: 65ch; }
   gap: 0.6rem;
 }
 .sn-link:hover svg { transform: translateX(2px); }
+
+/* ============================================================
+   CARTES CHANTIER — image plein cadre, texte en overlay
+   (remplace l'ancien style carte blanche + pastilles)
+   ============================================================ */
+.pcard-wrap {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+.pcard {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  color: var(--color-white);
+  text-decoration: none;
+  isolation: isolate;
+  background: var(--color-surface-2);
+}
+
+.pcard img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.9s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.pcard:hover img { transform: scale(1.045); }
+
+/* Voile dégradé pour la lisibilité du texte */
+.pcard-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+    rgba(10,10,8,0.90) 0%,
+    rgba(10,10,8,0.55) 26%,
+    rgba(10,10,8,0.10) 52%,
+    rgba(10,10,8,0) 70%);
+}
+
+.pcard-content {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  padding: 1.5rem 1.4rem 1.35rem;
+}
+
+.pcard-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pcard .pcard-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-white);
+  margin: 0 0 0.4rem;
+}
+
+.pcard .pcard-place {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.70);
+}
+.pcard-place svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+.pcard-year {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+  line-height: 1.1;
+}
+.pcard .pcard-year-label {
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.5);
+}
+.pcard .pcard-year-value {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--color-white);
+}
+
+/* Méta : texte fin + icône (pas de pastilles) */
+.pcard-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1.1rem;
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.16);
+}
+.pcard .pcard-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  color: rgba(255,255,255,0.72);
+}
+.pcard-meta svg { width: 13px; height: 13px; flex-shrink: 0; color: var(--color-gold); }
+
+@media (max-width: 900px) {
+  .projects-grid, .chantiers-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 560px) {
+  .projects-grid, .chantiers-grid { grid-template-columns: 1fr !important; }
+  .pcard { aspect-ratio: 3 / 4; }
+}
