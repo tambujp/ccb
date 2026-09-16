@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       try {
         const res = await fetch(contactForm.action, {
           method: 'POST',
-          body: new FormData(contactForm),
+          body: new URLSearchParams(new FormData(contactForm)),
           headers: { 'Accept': 'application/json' },
         });
         if (res.ok) {
