@@ -1,10 +1,20 @@
-// Fonction serverless Vercel — reçoit le formulaire de contact et envoie l'email via Resend.
-// Variables d'environnement à définir dans Vercel (Project → Settings → Environment Variables) :
-//   RESEND_API_KEY   — clé API Resend (obligatoire)
-//   CONTACT_TO_EMAIL — adresse de destination (ex: contact@steccb.com)
-//   CONTACT_FROM     — adresse expéditrice (ex: "CCB — Site web <formulaire@steccb.com>")
-//                       tant que le domaine steccb.com n'est pas vérifié dans Resend,
-//                       utiliser "CCB — Site web <onboarding@resend.dev>"
+// Fonction serverless Vercel — reçoit le formulaire de contact et envoie l'email
+// directement via le SMTP de la boîte mail existante (Online.net / Scaleway).
+// Aucune inscription à un service tiers : on utilise le compte email déjà actif.
+//
+// Variables d'environnement à définir dans Vercel
+// (Project ccb → Settings → Environment Variables) :
+//   SMTP_HOST        — serveur SMTP sortant (généralement "smtp.online.net" pour
+//                       une boîte mail hébergée chez Online.net/Scaleway — à vérifier
+//                       dans la console Scaleway, section "Mail" / paramètres du webmail)
+//   SMTP_PORT        — port SMTP (587 en général, avec STARTTLS)
+//   SMTP_USER        — adresse complète de la boîte (ex: contact@steccb.com)
+//   SMTP_PASS        — mot de passe de cette boîte mail
+//   CONTACT_TO_EMAIL — adresse de destination (souvent la même que SMTP_USER)
+//
+// ⚠️ Ces valeurs se saisissent UNIQUEMENT dans le dashboard Vercel, jamais dans le code.
+
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -31,14 +41,14 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Champs requis manquants ou invalides.' });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    console.error('RESEND_API_KEY manquante dans les variables d\'environnement Vercel.');
+  const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+  if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
+    console.error('Variables SMTP manquantes dans les variables d\'environnement Vercel.');
     return res.status(500).json({ error: 'Configuration serveur incomplète.' });
   }
 
-  const to = process.env.CONTACT_TO_EMAIL || 'contact@steccb.com';
-  const from = process.env.CONTACT_FROM || 'CCB — Site web <onboarding@resend.dev>';
+  const to = process.env.CONTACT_TO_EMAIL || SMTP_USER;
+  const port = Number(SMTP_PORT) || 587;
 
   const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -55,30 +65,24 @@ export default async function handler(req, res) {
   `;
 
   try {
-    const r = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        reply_to: email,
-        subject: `Nouvelle demande de devis — ${prenom} ${nom}`,
-        html,
-      }),
+    const transporter = nodemailer.createTransport({
+      host: SMTP_HOST,
+      port,
+      secure: port === 465,       // true pour le port 465 (SSL direct), false pour 587 (STARTTLS)
+      auth: { user: SMTP_USER, pass: SMTP_PASS },
     });
 
-    if (!r.ok) {
-      const errText = await r.text();
-      console.error('Resend error:', r.status, errText);
-      return res.status(502).json({ error: 'Échec de l\'envoi de l\'email.' });
-    }
+    await transporter.sendMail({
+      from: `"CCB — Site web" <${SMTP_USER}>`,
+      to,
+      replyTo: email,
+      subject: `Nouvelle demande de devis — ${prenom} ${nom}`,
+      html,
+    });
 
     return res.status(200).json({ ok: true });
   } catch (err) {
-    console.error('Contact form error:', err);
-    return res.status(500).json({ error: 'Erreur serveur.' });
+    console.error('Contact form SMTP error:', err);
+    return res.status(502).json({ error: 'Échec de l\'envoi de l\'email.' });
   }
 }

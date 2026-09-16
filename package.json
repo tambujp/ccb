@@ -1,0 +1,10 @@
+{
+  "name": "ccb-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Site vitrine CCB — statique, avec une fonction serverless pour le formulaire de contact.",
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
